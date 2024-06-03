@@ -1,19 +1,53 @@
-## slacker
-slacker (you can also write it as "Slacker") is a framework written in Go for creating [Slack](https://slack.com) apps. Slacker takes inspiration from Slack's own framework [Bolt](https://api.slack.com/bolt) which are available in Python, JavaScript, and Java flavours.
+# Warning: Not ready for production (as on 3 June 2024)!
 
-### Supported Go version
-\>= go1.22.2
+## slacker
+slacker (you can also write it as "Slacker") is a framework written in Nim (as a [nimble](https://github.com/nim-lang/nimble) package) for creating [Slack](https://slack.com) app servers. Slacker takes inspiration from Slack's own framework [Bolt](https://api.slack.com/bolt) which is available in Python, JavaScript, and Java flavours.
+
+### Supported Nim version
+\>= 2.0.4
 
 ### Installation
-Make sure you have a working Go installation; being a version equal to or greater than the one mentioned above. If you don't have Go installed in your machine, you can install Go by following the instructions [here](https://go.dev/dl/).
+Make sure you have a working Nim installation; being a version equal to or greater than the one mentioned above. If you don't have Nim installed in your machine, you can install Nim by following the instructions [here](https://nim-lang.org/install.html).
 
-Once you have Go installed on your machine, you can install slacker for your project using `go get`.
+Once you have Nim installed in your machine, you can install slacker using `nimble install`.
 
 ```bash
-$ mkdir your_project_folder
+$ nimble install github.com/bsljth/slacker
+```
+Once you have installed slacker (the above scripts installs slacker for your system), you need to add it to your project. First, create your project using `nimble`
 
-$ cd your_project_folder
+```bash
+$ nimble init your_project_name
+# answer all the prompted questions that follow
+# ...
 
-$ go get github.com/bsljth/slacker
+$ cd your_project_name
 ```
 
+You can also create a project folder using `mkdir` and `cd` into it and run `nimble init`.
+
+Once you have created your project, add the following line to your project's `.nimble` file (there's only one such file in a project) in the root folder.
+
+```nim
+# your_project_name.nimble
+
+
+requires "slacker >= 0.1.0"
+```
+
+### Usage
+Here's how you can initialise your Slack app using `slacker`. Within 
+
+```nim
+# /src/your_project_name.nim
+
+import slacker
+
+app = slacker.New()
+
+```
+
+### License
+MIT
+
+PS: I can set apart only about one hour every day (cannot do anything on Sundays) to work on this for now. So, development on this would be extremely slow.
