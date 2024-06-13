@@ -60,6 +60,7 @@ Add the following to your main `.nim` file.
 import slacker
 
 let config = ?
+# config's data structure is yet to be decided
 
 app = slacker.New(config)
 # config will contain the token and signing-secret.
