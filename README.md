@@ -1,4 +1,4 @@
-# Warning: Not ready for production (as on 3 June 2024)!
+# Warning: Not ready for production (as on 14 June 2024)!
 
 ## slacker
 slacker (you can also write it as "Slacker") is a framework written in Nim (as a [nimble](https://github.com/nim-lang/nimble) package) for creating [Slack](https://slack.com) app servers. Slacker takes inspiration from Slack's own framework [Bolt](https://api.slack.com/bolt) which is available in Python, JavaScript, and Java flavours.
@@ -51,3 +51,13 @@ app = slacker.New()
 MIT
 
 PS: I can set apart only about one hour every day (cannot do anything on Sundays) to work on this for now. So, development on this would be extremely slow.
+
+### To-do
+- [ ] app initialising function/struct
+- [ ] app.start method
+- [ ] app.message method to listen to messages
+- [ ] say proc to send a message
+- [ ] app.action method to respond to named events
+- [ ] app.message to take Regex as triggering message argument
+- [ ] say proc to send message as "blocks"
+...(to be completed)
