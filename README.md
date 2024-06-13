@@ -48,7 +48,9 @@ requires "slacker >= 0.1.0"
 ```
 
 ### Usage
-Here's how you can initialise your Slack app using `slacker`. Within the `/src/` folder, add the following to your main (starting point) `.nim` file. Note: You can configure which should be your source directory for the project and which should be your starting point by configuring the `srcDir` and `bin` values in your `.nimble` file.
+Here's how you can initialise your Slack app using `slacker`. Within the `/src/` folder, add the following to your main (starting point) `.nim` file.
+
+*Note: You can configure which directory should be your source directory for the project and which should be your starting point by configuring the `srcDir` and `bin` values in your `.nimble` file.*
 
 Add the following to your main `.nim` file.
 
