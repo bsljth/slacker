@@ -26,12 +26,24 @@ $ cd your_project_name
 
 You can also create a project folder using `mkdir` and `cd` into it and run `nimble init`.
 
-Once you have created your project, add the following line to your project's `.nimble` file (there's only one such file in a project) in the root folder.
+Once you have created your project, add the line: `requires "slacker >= 0.1.0"` to your project's `.nimble` file in the root folder (there's only one such file in a project).
 
 ```nim
 # your_project_name.nimble
 
+# Package
 
+version       = "0.1.0"
+author        = "[YOUR NAME]"
+description   = "[DESCRIPTION]"
+license       = "[LICENSE]"
+srcDir        = "[SOURCE FOLDER]"
+bin           = @["file_name"]
+
+
+# Dependencies
+
+requires "nim >= 2.0.4"
 requires "slacker >= 0.1.0"
 ```
 
