@@ -1,4 +1,4 @@
-# Warning: Not ready for production (as on 14 June 2024)!
+# Warning: Not ready for any use let alone production (as on 14 June 2024)!
 
 ## slacker
 Slacker (you may also write it as "slacker") is a framework written in Nim (as a [nimble](https://github.com/nim-lang/nimble) package) for creating [Slack](https://slack.com) app servers. Slacker takes inspiration from Slack's own framework [Bolt](https://api.slack.com/bolt) which is available in Python, JavaScript, and Java flavours.
